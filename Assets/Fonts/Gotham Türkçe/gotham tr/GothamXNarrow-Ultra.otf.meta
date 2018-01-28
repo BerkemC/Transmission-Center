@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 037d53c61955d0d4ba9fde15008a6547
+timeCreated: 1517060587
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gotham XNarrow
+  fontNames:
+  - Gotham XNarrow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
