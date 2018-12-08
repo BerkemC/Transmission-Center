@@ -30,18 +30,21 @@ public class ManualWriter : MonoBehaviour {
 	#region Methods
 	private void PrintLetter()
 	{
-		if(CurrentIndex >= messages[CurrentText].Length && CurrentText < texts.Count )
+        if (CurrentText < texts.Count)
+        {
+
+            texts[CurrentText].text += messages[CurrentText][CurrentIndex];
+            CurrentIndex++;
+
+        }
+        else { return; }
+
+        if (CurrentIndex >= messages[CurrentText].Length && CurrentText < texts.Count )
 		{
 			CurrentText++;
 			CurrentIndex = 0;
 		}
-		if(CurrentText < texts.Count )
-		{
-
-			texts [CurrentText].text += messages [CurrentText][CurrentIndex];
-			CurrentIndex++;
-
-		}
+		
 	}
 	#endregion
 }

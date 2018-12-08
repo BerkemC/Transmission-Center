@@ -24,16 +24,14 @@ public class DeathPanelControl : MonoBehaviour {
 	public void OpenDeathPanel()
 	{
 
-
-
 		if(text)
 		{
 			text.SetActive (false);
 		}
 
 
-		animator.SetTrigger ("OpenPanel");
-		isPanelOpen = true;
+        if (!isPanelOpen) { animator.SetTrigger("OpenPanel"); isPanelOpen = true; }
+		
 	}
 
 	public void CloseDeathPanel()
@@ -45,8 +43,8 @@ public class DeathPanelControl : MonoBehaviour {
 			text.SetActive (true);
 		}
 
-		animator.SetTrigger ("ClosePanel");
-		isPanelOpen = false;
+        if (isPanelOpen) { animator.SetTrigger("ClosePanel"); isPanelOpen = false; }
+		
 	}
 
 
